@@ -31,13 +31,13 @@ class XYZComponent(Component):
     @property
     def z(self):
         return self.vector[2]
-    @property
+    @x.setter
     def x(self, value):
         self.vector[0] = value
-    @property
+    @y.setter
     def y(self, value):
         self.vector[1] = value
-    @property
+    @z.setter
     def z(self, value):
         self.vector[2] = value
 
