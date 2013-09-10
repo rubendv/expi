@@ -13,6 +13,7 @@ class Skill(components.Component):
         self.training_start = None
         self.time_trained = 0
         self.time_trained_previous = 0
+        self.levelcurve = levelcurve
     @property
     def level(self):
         return self.levelcurve(seconds_trained)
